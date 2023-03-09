@@ -14,7 +14,6 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   int _selectedIndex = 0;
-  late PageController _pageController;
   List<Widget> page = [
     const HomePage(),
     const SearchPage(),
@@ -22,22 +21,7 @@ class _HomeScreenState extends State<HomeScreen> {
     const FavoritePage(),
   ];
 
-  @override
-  void initState() {
-    super.initState();
-    _pageController = PageController();
-  }
-
-  @override
-  void dispose() {
-    _pageController.dispose();
-    super.dispose();
-  }
-
-  void selectedIndex(index) {
-    setState(() {});
-  }
-
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
