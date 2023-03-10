@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:molten_navigationbar_flutter/molten_navigationbar_flutter.dart';
 import 'package:myshop/views/favorite_page.dart';
@@ -21,7 +22,6 @@ class _HomeScreenState extends State<HomeScreen> {
     const FavoritePage(),
   ];
 
-  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,16 +37,16 @@ class _HomeScreenState extends State<HomeScreen> {
         domeCircleColor: Colors.deepOrangeAccent,
         tabs: [
           MoltenTab(
-            icon: const Icon(Icons.home_outlined),
+            icon: const Icon(CupertinoIcons.home),
           ),
           MoltenTab(
-            icon: const Icon(Icons.search),
+            icon: const Icon(CupertinoIcons.search),
           ),
           MoltenTab(
-            icon: const Icon(Icons.shopping_cart_outlined),
+            icon: const Icon(CupertinoIcons.cart),
           ),
           MoltenTab(
-            icon: const Icon(Icons.favorite_border),
+            icon: const Icon(CupertinoIcons.heart),
           ),
         ],
         selectedIndex: _selectedIndex,

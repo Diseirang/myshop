@@ -23,6 +23,7 @@ class _MyAppState extends State<MyApp> {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+        scaffoldBackgroundColor: Color(0xFFFBFBFB),
         primarySwatch: Colors.blue,
       ),
       initialRoute: '/',
