@@ -27,6 +27,8 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       body: page[_selectedIndex],
       bottomNavigationBar: MoltenBottomNavigationBar(
+        // borderColor: Colors.black12,
+        barColor: Colors.greenAccent,
         borderRaduis: BorderRadius.zero,
         domeHeight: 20,
         domeCircleSize: 55,
