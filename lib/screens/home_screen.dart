@@ -26,8 +26,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: page[_selectedIndex],
-      bottomNavigationBar: MoltenBottomNavigationBar(
-        // borderColor: Colors.black12,
+      bottomNavigationBar: MoltenBottomNavigationBar( 
         barColor: Colors.greenAccent,
         borderRaduis: BorderRadius.zero,
         domeHeight: 20,
