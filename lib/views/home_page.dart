@@ -116,16 +116,17 @@ class HomePage extends StatelessWidget {
                       height: 30,
                     ),
                     CarouselSlider.builder(
-                        options: CarouselOptions(
-                          enlargeCenterPage: true,
-                          height: 350,
-                          autoPlay: true,
-                          autoPlayInterval: const Duration(seconds: 5),
-                        ),
-                        itemCount: 6,
-                        itemBuilder: (context, index, realIndex) {
-                          return buildItem();
-                        }),
+                      options: CarouselOptions(
+                        enlargeCenterPage: true,
+                        height: 350,
+                        autoPlay: true,
+                        autoPlayInterval: const Duration(seconds: 5),
+                      ),
+                      itemCount: 6,
+                      itemBuilder: (context, index, realIndex) {
+                        return buildItem();
+                      },
+                    ),
                   ],
                 ),
               ],
